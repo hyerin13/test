@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+    <p id="result6"></p>
+
+    <script>
+        var windowX=window.innerWidth;
+        var windowY=window.innerHeight;
+
+        //var windowX=document.body.clientWidth;
+        //var windowY=document.body.clientHeight; //window8 이하 지원, 크롬은 상관없이 다 지원함 (위에 코드랑 같은 말임)
+
+        var windowXx=screen.width;
+        var windowYy=screen.height;
+
+        var windowXxx=screen.availWidth;
+        var windowYyy=screen.availHeight;
+
+        document.getElementById("result1").innerHTML="Window Width is : " + windowX;
+        document.getElementById("result2").innerHTML="Window Height is : " + windowY;
+        document.getElementById("result3").innerHTML="Screen Width is : " + windowXx;
+        document.getElementById("result4").innerHTML="Screen Height is : " + windowYy;
+        document.getElementById("result5").innerHTML="Screen AvailWidth is : " + windowXxx;
+        document.getElementById("result6").innerHTML="Screen AvailHeight is : " + windowYyy;
+    </script>
+</body>
+
+</html>
